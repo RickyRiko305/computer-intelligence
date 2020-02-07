@@ -1,0 +1,13 @@
+Int(0,L):- L ='Zero'.
+Int(1,L):- L ='one'.
+Int(2,L):- L ='Two'.
+Int(3,L):- L ='Three'.
+Int(4,L):- L ='Four'.
+Int(5,L):- L ='Five'.
+Int(6,L):- L ='Six'.
+Int(7,L):- L ='Seven'.
+Int(8,L):- L ='Eight'.
+Int(9,L):- L ='Nine'.
+
+printInt(0).
+printInt(X):- X1 = (X mod 10),X2=(X/10),printInt(X2),Int(X1,L),write(L).
